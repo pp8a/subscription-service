@@ -43,14 +43,14 @@
 ### 1. Локальный запуск (без Docker)
 1. Убедитесь, что установлен **Java 17** и **PostgreSQL**.
 2. Создайте базу данных `subscription_service` в PostgreSQL.
-3. Настройте `application.yml`:
-   ```yaml
+3. Настройте `application.yml`: 
+   ``` yaml
    spring:
      datasource:
        url: jdbc:postgresql://localhost:5432/subscription_service
        username: your_db_user
        password: your_db_password
-```
+
 4. Запустите приложение: `mvn spring-boot:run`
 
 ### 2. Запуск с Docker
@@ -79,6 +79,7 @@
  │   │   ├── db/changelog/      # Миграции Liquibase
  ├── test/    # Тесты
 ```
+
 
 ## API Документация
 После запуска, документация доступна по адресу:
