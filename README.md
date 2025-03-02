@@ -49,7 +49,8 @@
      datasource:
        url: jdbc:postgresql://localhost:5432/subscription_service
        username: your_db_user
-       password: your_db_password```
+       password: your_db_password
+```
 4. Запустите приложение: `mvn spring-boot:run`
 
 ### 2. Запуск с Docker
@@ -76,7 +77,8 @@
  │   ├── resources/
  │   │   ├── application.yml    # Конфигурация Spring Boot
  │   │   ├── db/changelog/      # Миграции Liquibase
- ├── test/    # Тесты```
+ ├── test/    # Тесты
+```
 
 ## API Документация
 После запуска, документация доступна по адресу:
