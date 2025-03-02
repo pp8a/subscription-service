@@ -1,0 +1,59 @@
+databaseChangeLog:
+  - changeSet:
+      id: insert-users
+      author: user
+      changes:
+        - insert:
+            tableName: users
+            columns:
+              - column:
+                  name: name
+                  value: "Robert Brown"
+              - column:
+                  name: email
+                  value: "robert.brown@example.com"
+        - insert:
+            tableName: users
+            columns:
+              - column:
+                  name: name
+                  value: "Emily Johnson"
+              - column:
+                  name: email
+                  value: "emily.johnson@example.com"
+        - insert:
+            tableName: users
+            columns:
+              - column:
+                  name: name
+                  value: "Michael Davis"
+              - column:
+                  name: email
+                  value: "michael.davis@example.com"
+        - insert:
+            tableName: users
+            columns:
+              - column:
+                  name: name
+                  value: "Sophia Martinez"
+              - column:
+                  name: email
+                  value: "sophia.martinez@example.com"
+        - insert:
+            tableName: users
+            columns:
+              - column:
+                  name: name
+                  value: "Daniel Wilson"
+              - column:
+                  name: email
+                  value: "daniel.wilson@example.com"
+        - insert:
+            tableName: users
+            columns:
+              - column:
+                  name: name
+                  value: "Olivia Taylor"
+              - column:
+                  name: email
+                  value: "olivia.taylor@example.com"

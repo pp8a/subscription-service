@@ -1,0 +1,87 @@
+databaseChangeLog:
+  - changeSet:
+      id: insert-subscriptions
+      author: user
+      changes:
+        # YouTube Premium – 5 раз (ТОП-1)
+        - insert:
+            tableName: subscriptions
+            columns:
+              - column: { name: user_id, value: 1 }
+              - column: { name: available_subscription_id, value: 1 }  # YouTube Premium
+        - insert:
+            tableName: subscriptions
+            columns:
+              - column: { name: user_id, value: 2 }
+              - column: { name: available_subscription_id, value: 1 }
+        - insert:
+            tableName: subscriptions
+            columns:
+              - column: { name: user_id, value: 3 }
+              - column: { name: available_subscription_id, value: 1 }
+        - insert:
+            tableName: subscriptions
+            columns:
+              - column: { name: user_id, value: 4 }
+              - column: { name: available_subscription_id, value: 1 }
+        - insert:
+            tableName: subscriptions
+            columns:
+              - column: { name: user_id, value: 5 }
+              - column: { name: available_subscription_id, value: 1 }
+
+        # Netflix – 4 раза (ТОП-2)
+        - insert:
+            tableName: subscriptions
+            columns:
+              - column: { name: user_id, value: 1 }
+              - column: { name: available_subscription_id, value: 4 }  # Netflix
+        - insert:
+            tableName: subscriptions
+            columns:
+              - column: { name: user_id, value: 3 }
+              - column: { name: available_subscription_id, value: 4 }
+        - insert:
+            tableName: subscriptions
+            columns:
+              - column: { name: user_id, value: 5 }
+              - column: { name: available_subscription_id, value: 4 }
+        - insert:
+            tableName: subscriptions
+            columns:
+              - column: { name: user_id, value: 6 }
+              - column: { name: available_subscription_id, value: 4 }
+
+        # Spotify – 3 раза (ТОП-3)
+        - insert:
+            tableName: subscriptions
+            columns:
+              - column: { name: user_id, value: 2 }
+              - column: { name: available_subscription_id, value: 5 }  # Spotify
+        - insert:
+            tableName: subscriptions
+            columns:
+              - column: { name: user_id, value: 4 }
+              - column: { name: available_subscription_id, value: 5 }
+        - insert:
+            tableName: subscriptions
+            columns:
+              - column: { name: user_id, value: 6 }
+              - column: { name: available_subscription_id, value: 5 }
+
+        # Остальные подписки по 1 разу
+        - insert:
+            tableName: subscriptions
+            columns:
+              - column: { name: user_id, value: 1 }
+              - column: { name: available_subscription_id, value: 2 }  # VK Music
+        - insert:
+            tableName: subscriptions
+            columns:
+              - column: { name: user_id, value: 3 }
+              - column: { name: available_subscription_id, value: 3 }  # Yandex Plus
+        - insert:
+            tableName: subscriptions
+            columns:
+              - column: { name: user_id, value: 5 }
+              - column: { name: available_subscription_id, value: 6 }  # Apple Music

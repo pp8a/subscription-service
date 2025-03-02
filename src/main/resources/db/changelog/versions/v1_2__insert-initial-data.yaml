@@ -1,0 +1,41 @@
+databaseChangeLog:
+  - changeSet:
+      id: insert-available-subscriptions
+      author: user
+      changes:
+        - insert:
+            tableName: available_subscriptions
+            columns:
+              - column:
+                  name: name
+                  value: "YouTube Premium"
+        - insert:
+            tableName: available_subscriptions
+            columns:
+              - column:
+                  name: name
+                  value: "VK Music"
+        - insert:
+            tableName: available_subscriptions
+            columns:
+              - column:
+                  name: name
+                  value: "Yandex Plus"
+        - insert:
+            tableName: available_subscriptions
+            columns:
+              - column:
+                  name: name
+                  value: "Netflix"
+        - insert:
+            tableName: available_subscriptions
+            columns:
+              - column:
+                  name: name
+                  value: "Spotify"
+        - insert:
+            tableName: available_subscriptions
+            columns:
+              - column:
+                  name: name
+                  value: "Apple Music"
